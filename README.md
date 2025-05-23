@@ -5,7 +5,7 @@ www.geotreasury.com
 # Summary
 # Cardano UBI E-commerce Platform
 
-🌍 **A Stripe-like e-commerce platform on Cardano with Universal Basic Income (UBI) to combat automation’s societal despair.** This open-source project aims to share 5-10% of transaction profits with random Cardano users, fostering equity and opportunity. Developers can restrict UBI to specific countries, supporting local or global impact. We’re seeking collaborators to build this vision!
+🌍 **A Stripe-like e-commerce platform on Cardano with Universal Basic Income (UBI) to combat automation’s societal despair.** This open-source project aims to share 2-10% of transaction profits with random Cardano users, fostering equity and opportunity. Developers can restrict UBI to specific countries, supporting local or global impact. We’re seeking collaborators to build this vision!
 
 ## Purpose
 Automation displaces workers and fuels inequality. This platform redistributes e-commerce profits as UBI to *any* Cardano user, not just app users, providing a safety net for displaced workers to retrain, start businesses, or thrive.
@@ -15,7 +15,7 @@ Tech is cutting jobs in retail, logistics, and beyond. Software engineers, while
 
 ## How It Works
 - **E-commerce API**: Developers integrate ADA payments via a Stripe-like API.
-- **UBI Treasury**: 5-10% of profits feed a Plutus smart contract treasury.
+- **UBI Treasury**: 2-10% of profits feed a Plutus smart contract treasury.
 - **Random Distribution**: Cardano’s RNG selects recipients from Atala PRISM’s identity registry.
 - **Country Restrictions**: Developers can limit UBI to specific countries (e.g., US, IN) using Atala PRISM credentials.
 - **Notifications**: Recipients get ADA + a message: “someapp.com shared 5 ADA with you.”
