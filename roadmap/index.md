@@ -234,7 +234,7 @@ The platform functions through these key interactions:
 #### Success Metrics:
 - Distribution success rate above 99.9%
 - Randomness verification publicly auditable
-- Distribution gas costs optimized to under 2 ADA per recipient
+- Script efficiency optimized for transaction processing
 - Treasury contract security audit with no critical findings
 
 ### 5.3 Recipient Onboarding

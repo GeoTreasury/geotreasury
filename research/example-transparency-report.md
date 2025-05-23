@@ -4,7 +4,7 @@ This report provides a summary of the platform’s operations for the period [in
 Transaction Summary
 
 Total Transactions Processed: [insert number] ADA
-UBI Contributions Collected: [insert amount] ADA (5-10% of transactions)
+UBI Contributions Collected: [insert amount] ADA (2-10% of transactions)
 UBI Distributions Made: [insert amount] ADA to [insert number] recipients
 Treasury Address: [insert public address]
 Viewable on Cardano Blockchain Explorer
