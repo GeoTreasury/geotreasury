@@ -2,7 +2,7 @@
 
 ## 1. Executive Summary
 
-GeoTreasury.com is a pioneering Cardano-based e-commerce platform designed to address automation-driven economic displacement through a novel Universal Basic Income (UBI) distribution system. By automatically allocating 5-10% of e-commerce transactions to a UBI treasury, GeoTreasury creates a sustainable funding mechanism that distributes resources to randomly selected verified individuals. The platform leverages Cardano's blockchain infrastructure, Atala PRISM for identity verification, Charli3 Oracle for randomness, and Hydra for scalability to create a transparent, fair, and efficient UBI distribution system that can scale globally.
+GeoTreasury.com is a pioneering Cardano-based e-commerce platform designed to address automation-driven economic displacement through a novel Universal Basic Income (UBI) distribution system. By automatically allocating 2-10% of e-commerce transactions to a UBI treasury, GeoTreasury creates a sustainable funding mechanism that distributes resources to randomly selected verified individuals. The platform leverages Cardano's blockchain infrastructure, Atala PRISM for identity verification, Charli3 Oracle for randomness, and Hydra for scalability to create a transparent, fair, and efficient UBI distribution system that can scale globally.
 
 Our mission is to create an economic safety net that grows proportionally with digital commerce, ensuring that as automation increases productivity, the benefits are shared more equitably across society.
 
@@ -35,7 +35,7 @@ Key findings from our research that inform this roadmap:
 The platform functions through these key interactions:
 
 1. Merchants integrate the GeoTreasury API for processing ADA payments
-2. 5-10% of each transaction is automatically allocated to the UBI treasury
+2. 2-10% of each transaction is automatically allocated to the UBI treasury
 3. Verified users register through Atala PRISM, establishing their eligibility
 4. Monthly, the side contract uses Charli3 Oracle to randomly select recipients
 5. The treasury contract distributes UBI to selected recipients
@@ -244,12 +244,18 @@ The platform functions through these key interactions:
 - Develop wallet address association mechanism
 - Implement consent management for data sharing
 - Build notification preferences management
+- Design mobile-first interfaces for accessibility
+- Implement multilingual support for global reach
+- Develop regional pilot approach before global expansion
 
 #### Technical Approach:
 - Integration with Atala PRISM for DID creation and management
 - QR code scanning for wallet address association
 - Granular consent options for different data types
 - Multi-channel notification preferences
+- Progressive web app design for cross-platform compatibility
+- Internationalization (i18n) framework for language support
+- Region-specific verification workflows for pilot regions
 
 #### Success Metrics:
 - Onboarding completion rate above 80%
@@ -326,6 +332,15 @@ The platform functions through these key interactions:
 - Develop credential verification system
 - Create privacy-preserving identity verification
 - Build consent management for data sharing
+- Design comprehensive compliance strategy for multiple jurisdictions
+- Explore sandbox environments in blockchain-friendly jurisdictions
+
+#### Regulatory Strategy:
+- Develop jurisdiction-specific compliance modules
+- Create adaptable KYC/AML frameworks based on regional requirements
+- Establish relationships with regulatory bodies in key markets
+- Implement automated compliance reporting mechanisms
+- Design privacy-preserving verification that meets regulatory standards
 
 #### Implementation Steps:
 1. Establish connection to Atala PRISM (Month 3)
@@ -366,6 +381,15 @@ The platform functions through these key interactions:
 - Develop state channels for efficient transaction batching
 - Create settlement protocol for main chain recording
 - Build fallback mechanisms for layer-2 failures
+- Establish contingency plans for Hydra integration delays
+- Optimize on-chain transactions as alternative scaling solution
+- Research alternative Layer-2 solutions as backup options
+
+#### Risk Mitigation:
+- Schedule early and frequent smart contract audits with third-party auditors
+- Implement phased deployment with thorough testing between phases
+- Create fallback mechanisms that can operate without Hydra if necessary
+- Develop circuit breakers for emergency situations
 
 #### Implementation Steps:
 1. Establish Hydra Head infrastructure (Months 13-14)
@@ -489,6 +513,26 @@ The platform functions through these key interactions:
 
 ## 9. Community & Funding Strategy
 
+### 9.0 Economic Resilience
+
+#### Approach:
+- Develop economic scenario modeling for treasury sustainability
+- Create stress tests for various market conditions
+- Implement adaptive treasury management strategies
+- Build merchant analytics showing UBI contribution benefits
+
+#### Implementation Steps:
+1. Develop economic models (Months 3-5)
+2. Create simulation framework (Months 5-7)
+3. Implement monitoring and analytics (Months 7-9)
+4. Develop adaptive strategies (Months 9-12)
+
+#### Success Criteria:
+- Treasury maintains solvency under various economic scenarios
+- System adapts to changing market conditions
+- Merchants can clearly see the benefits of their UBI contributions
+- Economic impact reports demonstrate sustainable growth
+
 ### 9.1 Project Catalyst Funding
 
 #### Approach:
@@ -520,22 +564,26 @@ The platform functions through these key interactions:
 #### Timeline:
 - Documentation and tutorials: Starting Month 3
 - Open-source contribution: Starting Month 6
-- Community governance: Starting Month 18
+- Community governance: Starting Month 12
 - Social media presence: Continuous
 
 #### Success Criteria:
 - Active community of >1000 members by Month 12
 - >20 open-source contributors by Month 18
 - Community governance participation >10% of users
+- Implementation of safeguards for critical treasury decisions
 - Positive sentiment in social media and forums
 
 ### 9.3 Merchant Acquisition
 
 #### Approach:
-- Develop compelling value proposition
+- Develop compelling value proposition highlighting reduced fees, marketing exposure, and customer loyalty programs
 - Create easy onboarding process
 - Implement referral program
 - Provide excellent support and documentation
+- Offer tiered UBI allocation (2-10%) to attract smaller merchants initially
+- Establish partnerships with existing Cardano marketplaces and e-commerce platforms
+- Provide merchant analytics showing UBI contribution benefits
 
 #### Timeline:
 - Value proposition development: Months 1-3

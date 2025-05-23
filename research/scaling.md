@@ -18,7 +18,7 @@ A side contract updates a shared recipient list monthly, using Charli3 for rando
 Atala PRISM’s off-chain identity storage scales to millions of users, with the side contract verifying eligibility on-chain, ensuring efficiency.
 
 #### Cost Management
-Using 1% of the 5-10% profit for Charli3 fees (e.g., ~0.55 ADA per request) keeps costs low, with community funding covering additional expenses.
+Using 1% of the 2-10% profit for Charli3 fees (e.g., ~0.55 ADA per request) keeps costs low, with community funding covering additional expenses.
 
 ---
 
@@ -27,7 +27,7 @@ Using 1% of the 5-10% profit for Charli3 fees (e.g., ~0.55 ADA per request) keep
 This analysis explores strategies to scale the Cardano UBI E-commerce Platform, as described on [geotreasury.com](https://geotreasury.com), to handle increased transaction volumes, efficient Universal Basic Income (UBI) distributions, and a growing user base while maintaining fairness, transparency, and the platform’s social mission. It focuses on leveraging Cardano’s layer-2 solutions, particularly **Hydra**, alongside sidechains, off-chain computing, optimized smart contracts, and community-driven funding. The analysis draws on web search results and inferred details as of 02:35 PM CDT on Wednesday, May 21, 2025.
 
 #### Platform Overview
-The Cardano UBI E-commerce Platform aims to create a decentralized e-commerce system on the Cardano blockchain, redistributing 5-10% of transaction profits as UBI to random Cardano users. It provides a Stripe-like API for ADA payments, supporting one-off purchases and subscriptions, similar to Square’s functionality. A Plutus smart contract manages the UBI treasury, collecting profits and distributing them to recipients selected randomly from the Atala PRISM identity registry, with optional country restrictions. The project is open-source, licensed under MIT, and relies on community funding through [Project Catalyst](https://projectcatalyst.io/), avoiding profit-taking for operations. A proposed side contract manages a shared monthly recipient list, with apps pulling from it for distributions, using randomness from Charli3.
+The Cardano UBI E-commerce Platform aims to create a decentralized e-commerce system on the Cardano blockchain, redistributing 2-10% of transaction profits as UBI to random Cardano users. It provides a Stripe-like API for ADA payments, supporting one-off purchases and subscriptions, similar to Square’s functionality. A Plutus smart contract manages the UBI treasury, collecting profits and distributing them to recipients selected randomly from the Atala PRISM identity registry, with optional country restrictions. The project is open-source, licensed under MIT, and relies on community funding through [Project Catalyst](https://projectcatalyst.io/), avoiding profit-taking for operations. A proposed side contract manages a shared monthly recipient list, with apps pulling from it for distributions, using randomness from Charli3.
 
 Scaling the platform involves addressing:
 - **Transaction Processing**: Handling increased e-commerce transactions as more businesses integrate.
@@ -43,13 +43,13 @@ Cardano’s layer-2 solution, **Hydra**, uses isomorphic state channels called *
 
 For the UBI platform:
 - **E-commerce Transactions**: Businesses using the platform’s API can process payments within Hydra Heads, reducing main chain congestion. For example, a Hydra Head could handle all transactions for a group of merchants, settling only final balances on-chain.
-- **Implementation**: Each business or group of businesses could operate a Hydra Head, processing customer payments off-chain. The 5-10% UBI contribution is pooled within the head and periodically settled to the UBI treasury on the main chain.
+- **Implementation**: Each business or group of businesses could operate a Hydra Head, processing customer payments off-chain. The 2-10% UBI contribution is pooled within the head and periodically settled to the UBI treasury on the main chain.
 - **Benefits**: This reduces transaction fees (e.g., ~0.2 ADA per on-chain transaction) and speeds up processing, as off-chain transactions bypass the 20-second block time [Cardano’s EUTXO Model](https://developers.cardano.org/docs/smart-contracts/).
 
 ##### 2. UBI Distribution with Side Contract and Hydra
 The proposed **side contract** centralizes recipient selection, updating a shared list monthly using randomness from Charli3. Hydra enhances this by enabling scalable distributions:
 - **Side Contract**: The side contract, a Plutus smart contract, requests a random number from Charli3 to select recipients from the Atala PRISM registry, filtered by country restrictions. The list is stored as a datum in a UTXO, accessible to all apps.
-- **Hydra Head for Distribution**: A Hydra Head is created monthly, involving the UBI treasury and selected recipients. Apps contribute their 5-10% profits to the head, which distributes UBI off-chain to recipients on the shared list.
+- **Hydra Head for Distribution**: A Hydra Head is created monthly, involving the UBI treasury and selected recipients. Apps contribute their 2-10% profits to the head, which distributes UBI off-chain to recipients on the shared list.
 - **Transaction Limits**: Cardano’s transaction size limit is 16KB, allowing ~197 outputs per transaction (assuming 80 bytes per output) [Cardano Transaction Limits](https://cardano.stackexchange.com/questions/108/is-there-a-maximum-number-of-transactions-a-block-can-hold). For a list of 10,000 recipients, ~51 transactions are needed, but Hydra Heads process these off-chain, settling only the final state on-chain.
 - **Benefits**: Off-chain processing supports large-scale distributions (e.g., thousands of recipients) with minimal fees, and settlements ensure transparency [IOHK Blog on Hydra](https://iohk.io/en/blog/posts/2022/02/03/implementing-hydra-heads-the-first-step-towards-the-full-hydra-vision/).
 
@@ -62,7 +62,7 @@ Atala PRISM, Cardano’s decentralized identity solution, stores user data off-c
 ##### 4. Randomness and Oracle Usage with Charli3
 Randomness for recipient selection is provided by **Charli3**, a native Cardano oracle using a pay-per-request model with $C3 tokens (~$0.055 each) [Charli3 Price](https://www.coingecko.com/en/coins/charli3). Scaling considerations:
 - **Centralized Randomness**: The side contract requests one random number per month, reducing costs compared to each app requesting independently. Estimated cost: ~0.55 ADA per request, or 6.6 ADA annually for monthly distributions.
-- **Funding**: Using 1% of the 5-10% profit (e.g., 1 ADA from a 100 ADA transaction) covers oracle fees, with the rest for UBI, as previously discussed.
+- **Funding**: Using 1% of the 2-10% profit (e.g., 1 ADA from a 100 ADA transaction) covers oracle fees, with the rest for UBI, as previously discussed.
 - **Benefits**: Centralized randomness minimizes oracle requests, and Charli3’s Substrate-based sidechain ensures fast, cost-effective data delivery [Charli3 Sidechain](https://adapulse.io/charli3-a-decentralized-oracle-solution-for-cardano/).
 
 ##### 5. Off-Chain Computing and Smart Contract Optimization

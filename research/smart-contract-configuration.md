@@ -7,7 +7,7 @@
 
 The smart contract's configurability in the Cardano UBI E-commerce Platform works by letting developers set specific settings when they deploy their own version of the contract. Here's how it breaks down:
 
-- **Setting the UBI Percentage**: You can choose a percentage for UBI within the 5-10% range when deploying the contract. This decides how much of each transaction goes to the UBI treasury.
+- **Setting the UBI Percentage**: You can choose a percentage for UBI within the 2-10% range when deploying the contract. This decides how much of each transaction goes to the UBI treasury.
 
 - **Choosing Country Restrictions**: You can also set which countries can receive UBI, using Atala PRISM for identity verification. This means you can limit UBI to specific places, like the US or India, based on user credentials.
 
@@ -22,7 +22,7 @@ This setup ensures flexibility for different businesses while keeping the platfo
 This comprehensive analysis explores how configurability is implemented in the smart contract for the Cardano UBI E-commerce Platform, as described on [geotreasury.com](https://geotreasury.com), focusing on the mechanisms for setting parameters such as the Universal Basic Income (UBI) percentage and country restrictions. It draws on available information and inferred details as of 1:11 PM CDT on Wednesday, May 21, 2025, to provide a detailed understanding of the technical and operational aspects.
 
 #### Background on the Platform and Smart Contract
-The Cardano UBI E-commerce Platform, pitched by Micheal Giles on X, aims to create a decentralized e-commerce system on the Cardano blockchain, redistributing 5-10% of transaction profits as UBI to random Cardano users. The platform provides a "Stripe-like API for ADA payments," enabling businesses to accept ADA for various transaction types, including one-off purchases and subscriptions, similar to Square’s functionality. The smart contract, written in Plutus, manages the UBI treasury, collecting profits and distributing them based on configurable parameters, as mentioned in the project description: "Developers can restrict UBI to specific countries, supporting local or global impact."
+The Cardano UBI E-commerce Platform, pitched by Micheal Giles on X, aims to create a decentralized e-commerce system on the Cardano blockchain, redistributing 2-10% of transaction profits as UBI to random Cardano users. The platform provides a "Stripe-like API for ADA payments," enabling businesses to accept ADA for various transaction types, including one-off purchases and subscriptions, similar to Square’s functionality. The smart contract, written in Plutus, manages the UBI treasury, collecting profits and distributing them based on configurable parameters, as mentioned in the project description: "Developers can restrict UBI to specific countries, supporting local or global impact."
 
 The platform is open-source, licensed under MIT, and seeks collaboration and funding through [Project Catalyst](https://projectcatalyst.io), emphasizing community-driven development without profit-taking for operations, as per the user's decision to rely on fundraising.
 
@@ -40,7 +40,7 @@ Research into Plutus documentation, such as the Cardano Developer Portal, highli
 The project description outlines two key configurable aspects: the UBI percentage and country restrictions. Here's how each is likely implemented:
 
 - **UBI Percentage**:
-  - The platform specifies that 5-10% of transaction profits are allocated to the UBI treasury. While the range (5-10%) is fixed, developers can choose a specific percentage within this range when deploying their instance of the smart contract.
+  - The platform specifies that 2-10% of transaction profits are allocated to the UBI treasury. While the range (2-10%) is fixed, developers can choose a specific percentage within this range when deploying their instance of the smart contract.
   - This percentage could be set as a parameter during deployment or stored in the contract's initial datum. For example, a business might deploy their contract with a 7% UBI allocation, meaning 7 ADA goes to the treasury for every 100 ADA transaction, with the rest to the business.
   - Research suggests that Plutus contracts can handle such parameters efficiently, with the contract logic using the configured percentage to calculate the UBI amount for each transaction [How to optimize Plutus smart contracts? - Cardano Stack Exchange](https://cardano.stackexchange.com/questions/7570/how-to-optimize-plutus-smart-contracts).
 
@@ -97,7 +97,7 @@ Compared to Ethereum, where smart contracts can be upgradeable using proxy patte
 | Flexibility           | Per-instance configuration, high for deployments  | On-chain updates possible, more dynamic     |
 
 #### Conclusion
-In conclusion, the configurability of the smart contract in the Cardano UBI E-commerce Platform is achieved by allowing developers to set specific parameters—such as the UBI percentage (within the 5-10% range) and allowed countries—when deploying their instance of the contract. These parameters are used in the contract’s logic to govern UBI distribution, ensuring flexibility for different businesses while maintaining the platform’s core principles of equity and social impact. Each business can have their own tailored configuration, supported by Plutus’s use of datums and Atala PRISM for identity verification, with the immutable nature requiring redeployment for changes.
+In conclusion, the configurability of the smart contract in the Cardano UBI E-commerce Platform is achieved by allowing developers to set specific parameters—such as the UBI percentage (within the 2-10% range) and allowed countries—when deploying their instance of the contract. These parameters are used in the contract’s logic to govern UBI distribution, ensuring flexibility for different businesses while maintaining the platform’s core principles of equity and social impact. Each business can have their own tailored configuration, supported by Plutus’s use of datums and Atala PRISM for identity verification, with the immutable nature requiring redeployment for changes.
 
 ### Key Citations
 - [Plutus Documentation Cardano Developer Portal](https://developers.cardano.org/docs/smart-contracts/plutus/)

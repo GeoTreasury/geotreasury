@@ -7,7 +7,7 @@
 The Cardano UBI E-commerce Platform ensures transparency by leveraging the public nature of the Cardano blockchain, where all transactions are recorded and verifiable by anyone. The open-source smart contract code, licensed under MIT, allows public review to confirm the logic for collecting and distributing UBI funds. Atala PRISM’s decentralized identity system ensures auditable eligibility checks, while Cardano’s Verifiable Random Function (VRF) provides fair and verifiable recipient selection. Community involvement through platforms like [Project Catalyst](https://projectcatalyst.io) further supports transparency by enabling public scrutiny of development and funding.
 
 ### Transaction Visibility
-Every transaction, including the 5-10% profit allocation to the UBI treasury and distributions to recipients, is recorded on Cardano’s public ledger. Users can verify these transactions using blockchain explorers, ensuring that funds are handled as promised.
+Every transaction, including the 2-10% profit allocation to the UBI treasury and distributions to recipients, is recorded on Cardano’s public ledger. Users can verify these transactions using blockchain explorers, ensuring that funds are handled as promised.
 
 ### Open-Source Code
 The platform’s Plutus smart contract code is open-source, allowing developers and auditors to review how profits are collected and distributed. This openness prevents hidden manipulations and builds trust.
@@ -25,7 +25,7 @@ As an open-source project funded through [Project Catalyst](https://projectcatal
 This comprehensive analysis examines how transparency is implemented in the Cardano UBI E-commerce Platform, as described on [geotreasury.com](https://geotreasury.com), focusing on the mechanisms that ensure open, verifiable, and trustworthy operations for profit collection, UBI distribution, and overall platform functionality. It draws on available information and inferred details as of 1:21 PM CDT on Wednesday, May 21, 2025, to provide a detailed understanding of the technical and operational aspects of transparency.
 
 #### Background on the Platform
-The Cardano UBI E-commerce Platform, pitched by Micheal Giles on X, aims to create a decentralized e-commerce system on the Cardano blockchain, redistributing 5-10% of transaction profits as Universal Basic Income (UBI) to random Cardano users. The platform provides a "Stripe-like API for ADA payments," enabling businesses to accept ADA for one-off purchases and subscriptions, similar to Square’s functionality. The UBI treasury, managed by a Plutus smart contract, collects profits and distributes them using Cardano’s Random Number Generator (RNG) and Atala PRISM for identity verification. The project is open-source, licensed under MIT, and seeks funding through [Project Catalyst](https://projectcatalyst.io), emphasizing community-driven development without profit-taking for operations, as confirmed by the user’s preference for fundraising.
+The Cardano UBI E-commerce Platform, pitched by Micheal Giles on X, aims to create a decentralized e-commerce system on the Cardano blockchain, redistributing 2-10% of transaction profits as Universal Basic Income (UBI) to random Cardano users. The platform provides a "Stripe-like API for ADA payments," enabling businesses to accept ADA for one-off purchases and subscriptions, similar to Square’s functionality. The UBI treasury, managed by a Plutus smart contract, collects profits and distributes them using Cardano’s Random Number Generator (RNG) and Atala PRISM for identity verification. The project is open-source, licensed under MIT, and seeks funding through [Project Catalyst](https://projectcatalyst.io), emphasizing community-driven development without profit-taking for operations, as confirmed by the user’s preference for fundraising.
 
 Transparency is critical for the platform’s social mission, ensuring that stakeholders—merchants, recipients, and the community—can verify that funds are collected and distributed as promised, fostering trust and accountability.
 
@@ -33,8 +33,8 @@ Transparency is critical for the platform’s social mission, ensuring that stak
 Transparency in the Cardano UBI E-commerce Platform is achieved through a combination of blockchain technology, open-source principles, and community oversight. The following mechanisms ensure that all operations are open, verifiable, and auditable:
 
 ##### 1. Public Blockchain Transactions
-The platform operates on the Cardano blockchain, a public, proof-of-stake blockchain known for its transparency and security [Cardano Official Website](https://cardano.org/). All transactions, including those that allocate 5-10% of profits to the UBI treasury and distribute funds to recipients, are recorded on the public ledger. This allows anyone to:
-- Verify the amount collected from each transaction (e.g., 5-10 ADA from a 100 ADA transaction).
+The platform operates on the Cardano blockchain, a public, proof-of-stake blockchain known for its transparency and security [Cardano Official Website](https://cardano.org/). All transactions, including those that allocate 2-10% of profits to the UBI treasury and distribute funds to recipients, are recorded on the public ledger. This allows anyone to:
+- Verify the amount collected from each transaction (e.g., 2-10 ADA from a 100 ADA transaction).
 - Track distributions to recipients, ensuring funds reach the intended addresses.
 - Use blockchain explorers, such as those provided by the Cardano ecosystem, to inspect transaction details, including timestamps, amounts, and addresses.
 
@@ -42,7 +42,7 @@ The Cardano Foundation emphasizes that the blockchain restores trust through a �
 
 ##### 2. Open-Source Smart Contract Code
 The platform is open-source, with its Plutus smart contract code licensed under the MIT License, as noted on [geotreasury.com](https://geotreasury.com). This means the code is publicly available for review and auditing by developers, researchers, and the community. The smart contract handles:
-- **Profit Collection**: Automatically allocating 5-10% of each transaction to the UBI treasury via multi-output transactions.
+- **Profit Collection**: Automatically allocating 2-10% of each transaction to the UBI treasury via multi-output transactions.
 - **UBI Distribution**: Executing transfers to randomly selected recipients based on configured parameters (e.g., percentage, country restrictions).
 
 By making the code accessible, the platform ensures that stakeholders can verify the logic for collecting and distributing funds, preventing hidden manipulations or errors. The open-source nature aligns with Cardano’s ethos of openness, where “all research and technical specifications are publicly published” [Cardano Roadmap](https://roadmap.cardano.org/).
@@ -76,7 +76,7 @@ The Cardano ecosystem’s emphasis on community involvement, as seen in projects
 ##### 6. Auditability and Accountability
 The platform’s operations are inherently auditable due to:
 - **Public Ledger**: All transactions are recorded on the Cardano blockchain, allowing anyone to verify profit collection and UBI distribution.
-- **Open-Source Code**: The smart contract code can be audited to ensure it adheres to the promised 5-10% UBI allocation and fair distribution logic.
+- **Open-Source Code**: The smart contract code can be audited to ensure it adheres to the promised 2-10% UBI allocation and fair distribution logic.
 - **Atala PRISM**: The identity verification process is auditable, ensuring that only eligible recipients are selected.
 - **Randomness Verification**: The use of Cardano’s RNG (likely VRF-based) ensures that the random selection process can be verified for fairness.
 
@@ -87,7 +87,7 @@ The transparency mechanisms are implemented through the following technical comp
 
 - **Plutus Smart Contract**:
   - The UBI treasury smart contract, written in Plutus, handles profit collection and distribution. Its code is open-source, allowing public review.
-  - Transactions are multi-output, allocating 5-10% to the treasury and the rest to the merchant, recorded on the public blockchain.
+  - Transactions are multi-output, allocating 2-10% to the treasury and the rest to the merchant, recorded on the public blockchain.
   - The contract’s logic, including configurable parameters (e.g., UBI percentage, country restrictions), is verifiable through code audits.
 
 - **Atala PRISM**:
@@ -112,7 +112,7 @@ This report provides a summary of the platform’s operations for the period [in
 
 ## Transaction Summary
 - **Total Transactions Processed**: [insert number] ADA
-- **UBI Contributions Collected**: [insert amount] ADA (5-10% of transactions)
+- **UBI Contributions Collected**: [insert amount] ADA (2-10% of transactions)
 - **UBI Distributions Made**: [insert amount] ADA to [insert number] recipients
 - **Treasury Address**: [insert public address]
   - Viewable on [Cardano Blockchain Explorer](https://explorer.cardano.org)

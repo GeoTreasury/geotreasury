@@ -25,7 +25,7 @@ To integrate Charli3 into your platform, you would use its oracle services to fe
 This comprehensive analysis explores native Cardano projects that provide decentralized oracle services similar to Chainlink, focusing on their functionality, maturity, and relevance to the Cardano UBI E-commerce Platform described on [geotreasury.com]([invalid url, do not cite]). It then provides a detailed explanation of how the top contender, Charli3, can be implemented to support the platform’s need for random recipient selection for Universal Basic Income (UBI) distributions. The analysis draws on web search results and inferred details as of 1:52 PM CDT on Wednesday, May 21, 2025.
 
 #### Background on the Cardano UBI E-commerce Platform
-The Cardano UBI E-commerce Platform, pitched by Micheal Giles on X, aims to create a decentralized e-commerce system on the Cardano blockchain, redistributing 5-10% of transaction profits as UBI to random Cardano users. The platform provides a Stripe-like API for ADA payments, supporting one-off purchases and subscriptions, similar to Square’s functionality. A Plutus smart contract manages the UBI treasury, collecting profits and distributing them to recipients selected randomly from the Atala PRISM identity registry, with optional country restrictions. The project is open-source, licensed under MIT, and relies on community funding through [Project Catalyst]([invalid url, do not cite]), avoiding profit-taking for operations.
+The Cardano UBI E-commerce Platform, pitched by Micheal Giles on X, aims to create a decentralized e-commerce system on the Cardano blockchain, redistributing 2-10% of transaction profits as UBI to random Cardano users. The platform provides a Stripe-like API for ADA payments, supporting one-off purchases and subscriptions, similar to Square’s functionality. A Plutus smart contract manages the UBI treasury, collecting profits and distributing them to recipients selected randomly from the Atala PRISM identity registry, with optional country restrictions. The project is open-source, licensed under MIT, and relies on community funding through [Project Catalyst]([invalid url, do not cite]), avoiding profit-taking for operations.
 
 The platform requires a reliable source of randomness to ensure fair and varied recipient selection for UBI distributions. Chainlink’s Verifiable Random Function (VRF) is a well-known solution for providing tamper-proof randomness, but the user seeks native Cardano alternatives. This analysis identifies these alternatives and details how the top contender, Charli3, can be implemented.
 
@@ -135,7 +135,7 @@ Below is a pseudocode example of how the UBI smart contract might integrate with
 
 -- Data Types
 data Config = Config
-  { ubiPercentage :: Integer -- Percentage of transaction for UBI (5-10%)
+  { ubiPercentage :: Integer -- Percentage of transaction for UBI (2-10%)
   , allowedCountries :: [Text] -- List of allowed countries
   }
 
