@@ -1,42 +1,52 @@
-# geotreasury.com
-🌍 A Stripe-like e-commerce platform on Cardano with Universal Basic Income (UBI) to combat automation’s societal despair. 
-www.geotreasury.com
+# GeoTreasury
 
-# Contributing
-We welcome contributions to GeoTreasury! To get started, please review our Contribution Guide for detailed instructions on how to contribute, coding standards, and the development process.
-[Contribution Guide](https://github.com/GeoTreasury/.github/blob/main/CONTRIBUTING.md)
+Welcome to GeoTreasury, a pioneering Cardano-based e-commerce platform designed to address automation-driven economic displacement through a novel Universal Basic Income (UBI) distribution system. By automatically allocating 2-10% of e-commerce transactions to a UBI treasury, GeoTreasury creates a sustainable funding mechanism that distributes resources to randomly selected verified individuals. Our mission is to build an economic safety net that grows with digital commerce, ensuring the benefits of automation are shared equitably across society.
 
-# Summary
-# Cardano UBI E-commerce Platform
+This repository serves as the central hub for the GeoTreasury project, housing high-level assets such as research, the project roadmap, and a static webpage outlining our mission and community links. It acts as the entry point for contributors, developers, and stakeholders to explore the project and navigate to specialized repositories.
 
-🌍 **A Stripe-like e-commerce platform on Cardano with Universal Basic Income (UBI) to combat automation’s societal despair.** This open-source project aims to share 2-10% of transaction profits with random Cardano users, fostering equity and opportunity. Developers can restrict UBI to specific countries, supporting local or global impact. We’re seeking collaborators to build this vision!
+🌐 Visit our [website](https://geotreasury.com) for an overview of our mission and links to our socials and GitHub organization.
 
-## Purpose
-Automation displaces workers and fuels inequality. This platform redistributes e-commerce profits as UBI to *any* Cardano user, not just app users, providing a safety net for displaced workers to retrain, start businesses, or thrive.
+## About GeoTreasury
 
-## Why It’s Needed
-Tech is cutting jobs in retail, logistics, and beyond. Software engineers, while part of this challenge, can drive solutions by building systems that share wealth. This project empowers engineers to create a fairer future.
+GeoTreasury leverages Cardano’s blockchain infrastructure, Atala PRISM for identity verification, Charli3 Oracle for randomness, and Hydra for scalability to create a transparent, fair, and efficient UBI distribution system. Key features include:
 
-## How It Works
-- **E-commerce API**: Developers integrate ADA payments via a Stripe-like API.
-- **UBI Treasury**: 2-10% of profits feed a Plutus smart contract treasury.
-- **Random Distribution**: Cardano’s RNG selects recipients from Atala PRISM’s identity registry.
-- **Country Restrictions**: Developers can limit UBI to specific countries (e.g., US, IN) using Atala PRISM credentials.
-- **Notifications**: Recipients get ADA + a message: “someapp.com shared 5 ADA with you.”
-- **Global or Local**: Benefits all Cardano users or targeted regions, as chosen by developers.
+- **E-commerce Integration**: A Stripe-like API for ADA payments with automatic UBI allocation.
+- **Fair Distribution**: Verifiable randomness for recipient selection via Charli3 Oracle.
+- **Identity Verification**: Privacy-preserving decentralized identity management with Atala PRISM.
+- **Scalability**: Hydra Heads for off-chain processing to handle global transaction volumes.
+- **Transparency**: Open-source code and automated reporting for public verification.
 
-## Feasibility
-- **Cardano’s Tech**: Low fees, Hydra scaling, Plutus contracts, and Atala PRISM ensure secure, scalable UBI.
-- **Prototyping**: Build and test on Cardano’s testnets using Plutus Playground and Developer Portal.
-- **Incentives**: Contributors can pursue Project Catalyst funding and earn NFTs.
+Learn more in our [research](./research) and [roadmap](./roadmap) directories.
 
-## Get Involved
-We’re looking for developers, dreamers, and Cardano enthusiasts to collaborate!  
-- 📝 Share ideas on [Cardano Forum](https://forum.cardano.org) or [Issues](https://github.com/your-repo/issues).  
-- 💻 Contribute to Plutus contracts, API, or DApp (see [CONTRIBUTING.md](CONTRIBUTING.md)).  
-- 📩 DM on X (@your-handle) or join our [GitHub Discussions](https://github.com/your-repo/discussions).  
-- 💰 Fund via [Project Catalyst](https://projectcatalyst.io).
+## Project Repositories
 
-Let’s make tech a force for good! #BuildOnCardano #UBI #TechForGood
+GeoTreasury is organized into specialized repositories under the [GeoTreasury Git organization](https://github.com/GeoTreasury). Explore the following repos to contribute to specific components:
 
-🔗 [Cardano Developer Portal](https://developers.cardano.org)
+- **[geotreasury-core](https://github.com/GeoTreasury/geotreasury-core)**: Plutus smart contracts, UBI distribution, and Cardano blockchain integration.
+- **[geotreasury-api](https://github.com/GeoTreasury/geotreasury-api)**: E-commerce API for ADA payments and merchant integration.
+- **[geotreasury-identity](https://github.com/GeoTreasury/geotreasury-identity)**: Atala PRISM integration for decentralized identity verification.
+- **[geotreasury-randomness](https://github.com/GeoTreasury/geotreasury-randomness)**: Charli3 Oracle integration for verifiable randomness.
+- **[geotreasury-scalability](https://github.com/GeoTreasury/geotreasury-scalability)**: Hydra Heads for off-chain transaction processing.
+- **[geotreasury-notifications](https://github.com/GeoTreasury/geotreasury-notifications)**: Multi-channel notification system for recipients.
+- **[geotreasury-reporting](https://github.com/GeoTreasury/geotreasury-reporting)**: Transparency reporting and blockchain explorer integration.
+- **[geotreasury-frontend](https://github.com/GeoTreasury/geotreasury-frontend)**: User interfaces for onboarding, merchant dashboards, and governance.
+- **[geotreasury-docs](https://github.com/GeoTreasury/geotreasury-docs)**: Comprehensive documentation, API guides, and user manuals.
+
+## Getting Started
+
+To dive into the project:
+1. Visit the [research](./research) directory for insights driving GeoTreasury.
+2. Review the [roadmap](./roadmap) for our development phases and milestones.
+3. Explore the [website](https://geotreasury.com) for our mission statement and community links.
+4. Check out the specialized repositories above to contribute to specific components.
+
+## Contributing
+
+We welcome contributions to GeoTreasury! To get started, please review our [Contribution Guide](https://github.com/GeoTreasury/.github/blob/main/CONTRIBUTING.md) for detailed instructions on how to contribute, coding standards, and the development process.
+
+## Community
+
+Join our community to stay updated and engage with the project:
+- [GitHub Organization](https://github.com/GeoTreasury)
+
+Thank you for supporting GeoTreasury’s mission to create a more equitable economic future!
